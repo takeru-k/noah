@@ -132,7 +132,7 @@ li {
   --color-link: #337ab7;
   --font-base: "Noto Serif JP", serif;
   --font-serif: "Noto Serif JP", serif;
-  --font-english: "Lato", sans-serif;
+  --font-english: "Times New Roman", Times, serif;
   --transition-speed: 0.3s;
 }
 
@@ -725,7 +725,7 @@ li {
   font-weight: normal;
   letter-spacing: 0.02em;
   color: var(--color-font-white);
-  font-family: var(--font-english);
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.2;
 }
 
