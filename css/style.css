@@ -840,13 +840,13 @@ li {
 .p-business-card--bg1 {
   background-image:
     linear-gradient(rgba(20, 35, 50, 0.7), rgba(20, 35, 50, 0.85)),
-    url("../images/top/buildings.jpg");
+    url("../images/service/mall.jpg");
 }
 
 .p-business-card--bg2 {
   background-image:
     linear-gradient(rgba(20, 35, 50, 0.7), rgba(20, 35, 50, 0.85)),
-    url("../images/top/buildings.jpg");
+    url("../images/top/buildings02.jpg");
 }
 
 .p-business-card__inner {
