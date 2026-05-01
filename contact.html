@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__inner">
+        <div class="p-header-logo">
+          <a href="index.html" class="p-header-logo__link">
+            <img
+              src="images/header/logo.png"
+              alt="合同会社Noah Media"
+              class="p-header-logo__img"
+            />
+          </a>
+        </div>
+        <nav class="p-global-nav l-header__nav">
+          <ul class="p-global-nav__list">
+            <li class="p-global-nav__item current-menu-item">
+              <a href="index.html" class="p-global-nav__link">ホーム</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="company.html" class="p-global-nav__link">会社紹介</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="promotion.html" class="p-global-nav__link"
+                >プロモーション</a
+              >
+            </li>
+            <li class="p-global-nav__item has-sub-menu js-accordion-trigger">
+              <div class="p-global-nav__item-head">
+                <a href="#" class="p-global-nav__link">ITソリューション </a>
+                <button
+                  type="button"
+                  class="c-menu-toggle"
+                  aria-label="サブメニューを開く"
+                ></button>
+              </div>
+
+              <div class="p-mega-menu js-accordion-content">
+                <div class="p-mega-menu__inner">
+                  <a href="design.html" class="p-mega-menu__item">
+                    <span class="p-mega-menu__text">ホームページ制作</span>
+                  </a>
+                  <a href="ec.html" class="p-mega-menu__item">
+                    <span class="p-mega-menu__text">通販サイト制作</span>
+                  </a>
+                  <a href="line.html" class="p-mega-menu__item">
+                    <span class="p-mega-menu__text">公式LINE構築</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="recruit.html" class="p-global-nav__link">採用情報</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a href="contact.html" class="p-global-nav__link">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="c-hamburger js-btn"
+          aria-label="メニューを開く"
+          aria-controls="global-nav"
+        >
+          <span class="c-hamburger__line"></span>
+        </button>
+      </div>
+
+      <div class="c-menu-overlay"></div>
+    </header>
+    <main>
+      <div class="l-page-hero p-page-hero">
+        <div class="l-inner">
+          <h1 class="p-page-hero__title">contact.</h1>
+          <p class="p-page-hero__subtitle">お問い合わせ</p>
+        </div>
+      </div>
+
+      <section class="l-block">
+        <div class="l-inner">
+          <div class="p-contact__body">
+            <div class="p-contact__lead">
+              <p>
+                ご質問・ご相談、お見積もりなど、お気軽にお問い合わせください。
+              </p>
+              <p>お急ぎの方はお電話ください。</p>
+            </div>
+            <div class="p-contact__tel">
+              <a href="tel:0120-501-764"><small>tel. </small>0120-501-764</a>
+              <span>受付時間: 平日9:00〜18:00</span>
+            </div>
+            <div class="p-contact__lead">
+              <p>
+                メールでのお問い合わせは、下記フォームへ必要事項を入力の上、送信してください。1～2営業日以内に、担当よりメールにて返信いたします。
+              </p>
+              <p class="p-contact__require">
+                ※<span class="require">*</span>が付いている項目は必須です。
+              </p>
+            </div>
+            <div class="p-contact__form">
+              <div class="c-form">
+                <dl class="c-form__list">
+                  <div class="c-form__item">
+                    <dt class="c-form__term">
+                      <label for="company" class="c-form__label">
+                        会社名・屋号<span class="require">*</span>
+                      </label>
+                    </dt>
+                    <dd class="c-form__desc">
+                      <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        class="c-form__input"
+                        required
+                        autocomplete="organization"
+                      />
+                    </dd>
+                  </div>
+
+                  <div class="c-form__item">
+                    <dt class="c-form__term">
+                      <label for="name" class="c-form__label">お名前</label>
+                    </dt>
+                    <dd class="c-form__desc">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="c-form__input"
+                        autocomplete="name"
+                      />
+                    </dd>
+                  </div>
+
+                  <div class="c-form__item">
+                    <dt class="c-form__term">
+                      <label for="email" class="c-form__label">
+                        メールアドレス<span class="require">*</span>
+                      </label>
+                    </dt>
+                    <dd class="c-form__desc">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="c-form__input"
+                        required
+                        autocomplete="email"
+                      />
+                    </dd>
+                  </div>
+
+                  <div class="c-form__item">
+                    <dt class="c-form__term">
+                      <label for="tel" class="c-form__label">電話番号</label>
+                    </dt>
+                    <dd class="c-form__desc">
+                      <input
+                        type="tel"
+                        id="tel"
+                        name="tel"
+                        class="c-form__input"
+                        autocomplete="tel"
+                      />
+                    </dd>
+                  </div>
+
+                  <div class="c-form__item">
+                    <dt class="c-form__term">
+                      <label for="message" class="c-form__label">
+                        お問い合わせ内容<span class="require">*</span>
+                      </label>
+                    </dt>
+                    <dd class="c-form__desc">
+                      <textarea
+                        id="message"
+                        name="message"
+                        class="c-form__textarea"
+                        required
+                      ></textarea>
+                    </dd>
+                  </div>
+                </dl>
+
+                <div class="c-form__privacy-box">
+                  <p>
+                    <a
+                      href="privacy-policy.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >プライバシーポリシー</a
+                    >
+                    に同意して、送信してください。
+                  </p>
+                </div>
+
+                <div class="c-form__button">
+                  <button type="submit" class="c-form__button-action">
+                    この内容で送信する
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="p-footer">
+      <div class="p-footer__inner">
+        <div class="p-footer__contents">
+          <div class="p-footer__info">
+            <div class="p-footer__logo">合同会社Noah Media</div>
+            <p class="p-footer__address">
+              〒000-0000<br />
+              岩手県盛岡市菜園1-1-1<br />
+              ノアビルディング 5F
+            </p>
+          </div>
+
+          <nav class="p-footer__nav">
+            <ul class="p-footer__nav-list">
+              <li class="p-footer__nav-item">
+                <a href="index.html" class="p-footer__nav-link">ホーム</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="company.html" class="p-footer__nav-link">会社紹介</a>
+              </li>
+
+              <li class="p-footer__nav-item">
+                <span class="p-footer__nav-label">プロモーション</span>
+                <ul class="p-footer__sub-list">
+                  <li class="p-footer__sub-item">
+                    <a
+                      href="promotion.html#marketing"
+                      class="p-footer__sub-link"
+                      >フィールドマーケティング</a
+                    >
+                  </li>
+                  <li class="p-footer__sub-item">
+                    <a href="promotion.html#direct" class="p-footer__sub-link"
+                      >ダイレクトセールス</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="p-footer__nav-item">
+                <span class="p-footer__nav-label">ITソリューション</span>
+                <ul class="p-footer__sub-list">
+                  <li class="p-footer__sub-item">
+                    <a href="design.html" class="p-footer__sub-link"
+                      >ホームページ制作</a
+                    >
+                  </li>
+                  <li class="p-footer__sub-item">
+                    <a href="ec.html" class="p-footer__sub-link"
+                      >通販サイト制作</a
+                    >
+                  </li>
+                  <li class="p-footer__sub-item">
+                    <a href="line.html" class="p-footer__sub-link"
+                      >公式LINE構築</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="p-footer__nav-item">
+                <a href="recruit.html" class="p-footer__nav-link">採用情報</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="contact.html" class="p-footer__nav-link"
+                  >お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="p-footer__bottom">
+        <p class="p-footer__copyright">
+          <small>&copy; Noah Media LLC. All Rights Reserved.</small>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
