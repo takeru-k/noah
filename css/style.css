@@ -131,7 +131,6 @@ li {
   --color-border: #ececec;
   --color-link: #337ab7;
   --font-base: "Noto Serif JP", serif;
-  --font-serif: "Noto Serif JP", serif;
   --font-english: "Times New Roman", Times, serif;
   --transition-speed: 0.3s;
 }
@@ -207,13 +206,13 @@ li {
   font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
   color: #f2c94c;
   font-weight: bold;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .c-heading__subtitle span {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 @media screen and (min-width: 768px) {
@@ -224,7 +223,6 @@ li {
 
 /* 見出し */
 .c-heading__title {
-  font-family: var(--font-serif);
   font-size: clamp(1.625rem, 1.261rem + 1.82vw, 2.625rem);
   font-weight: normal;
   letter-spacing: 0.05em;
@@ -261,7 +259,6 @@ li {
 
 .c-textarea p {
   line-height: 2;
-  font-family: var(--font-serif);
   font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
   letter-spacing: 0.05em;
 }
@@ -307,6 +304,7 @@ li {
   border-radius: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   letter-spacing: 0.1em;
+  transition: var(--transition-speed);
 }
 
 .c-btn:hover {
@@ -733,7 +731,7 @@ li {
   font-weight: normal;
   letter-spacing: 0.02em;
   color: var(--color-font-white);
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--font-english);
   line-height: 1.2;
 }
 
@@ -746,7 +744,6 @@ li {
 }
 
 .p-hero__desc {
-  font-family: var(--font-serif);
   margin-top: 40px;
   letter-spacing: 0.1em;
   margin-bottom: 40px;
@@ -887,7 +884,7 @@ li {
 }
 
 .p-business-card__list {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 0 20px;
 }
 
@@ -905,7 +902,7 @@ li {
   align-items: center;
   padding: 16px 0;
   font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 .p-business-card__icon {
@@ -1195,13 +1192,13 @@ li {
 }
 
 .p-page-hero__title {
-  font-family: var(--font-english);
   font-size: clamp(2.25rem, 1.841rem + 2.05vw, 3.375rem);
-  font-weight: bold;
   color: var(--color-font-white);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   margin-bottom: 12px;
   text-transform: uppercase;
+  font-family: var(--font-english);
+  font-weight: normal;
 }
 
 .p-page-hero__subtitle {
@@ -1235,7 +1232,7 @@ li {
 }
 
 .p-service__label span {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .p-service__label--blue {
@@ -1302,14 +1299,18 @@ li {
   font-family: var(--font-english);
   font-size: 14px;
   color: var(--color-accent);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   margin-bottom: 16px;
   text-transform: uppercase;
   text-align: center;
 }
 
+.c-heading__subtitle span {
+  font-size: 1.4em;
+}
+
 .p-value-box__label span {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .p-value-box__label--blue {
@@ -1419,13 +1420,13 @@ li {
   display: block;
   font-family: var(--font-english);
   font-size: 14px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
 
 .p-solution__label span {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .p-solution__label--blue {
@@ -1449,9 +1450,7 @@ li {
 
 .p-solution__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-  margin-top: 20px;
+  gap: 16px;
 }
 
 .p-solution__grid:has(> .p-solution-card:last-child:nth-child(3))
@@ -1645,12 +1644,15 @@ li {
   display: grid;
   gap: 12px;
   text-align: left;
+}
+
+.p-intro p {
   font-size: 15px;
   line-height: 2;
 }
 
 @media (min-width: 1024px) {
-  .p-intro {
+  .p-intro p {
     line-height: 2.2;
     font-size: 16px;
   }
@@ -1854,6 +1856,12 @@ li {
   padding: 0 0 24px;
   letter-spacing: 0.05em;
   line-height: 1.8;
+}
+
+.p-recruit-info__dd a {
+  text-decoration: underline;
+  color: var(--color-link);
+  font-weight: bold;
 }
 
 .p-recruit-info__row:last-child .p-recruit-info__dd {
