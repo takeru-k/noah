@@ -1451,6 +1451,7 @@ li {
 .p-solution__grid {
   display: grid;
   gap: 16px;
+  margin-top: 24px;
 }
 
 .p-solution__grid:has(> .p-solution-card:last-child:nth-child(3))
@@ -1465,6 +1466,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 168px;
 }
 
 .p-solution-card__icon {
@@ -1483,6 +1485,8 @@ li {
   font-size: 14px;
   color: var(--color-font-white);
   line-height: 1.6;
+  width: 200px;
+  text-align: center;
 }
 
 .p-solution__text-grid {
